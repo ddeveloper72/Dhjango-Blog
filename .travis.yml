@@ -1,5 +1,6 @@
 language: python
-python: 3.4
+python: 
+    -"3.4"
 install: "pip install -r requirement.txt"
 script:
 -SECRET_KEY="whateveritmaybe" manage.py test
