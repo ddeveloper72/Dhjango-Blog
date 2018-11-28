@@ -2,3 +2,6 @@
 *.pyc
 .~c9
 __pycache__/
+.vscode
+.venv
+*.code-workspace
