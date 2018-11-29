@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_forms_bootstrap', # add in our apps
     'posts', # add in our apps
 ]
 
