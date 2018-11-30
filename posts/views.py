@@ -15,13 +15,13 @@ def get_posts(request):
 
     posts = Post.objects.filter(published_date__lte=timezone.now()
                                 ).order_by('-published_date')
-    return render(request, "blogposts.html", {'posts': posts})
+    return render(request, "blogposts.html", {'post': posts})
 
 
 
 def post_detail(request, pk):
     """
-    Create a view that returns a singe
+    Create a view that returns a single
     Post object based on the ID(pk) and
     render it to the 'postdetail.html' template,
     or return an error if the post is not found.
@@ -41,15 +41,15 @@ def create_or_edit_a_post(request, pk=None):
     is null or not.
     """
 
-    post = get_object_or_404(Post, pk=pk)
+    post = get_object_or_404(Post, pk=pk) if pk else None
     if request.method == "POST":
         form = BlogPostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             post = form.save()
             return redirect(post_detail, post.pk)
         
-        else:
-            form = BlogPostForm(instance=post)
-        return render(request, "blogpostform.html", {'form': form})
+    else:
+        form = BlogPostForm(instance=post) 
+    return render(request, 'blogpostform.html', {'form': form})
 
 
