@@ -15,7 +15,7 @@ def get_posts(request):
 
     posts = Post.objects.filter(published_date__lte=timezone.now()
                                 ).order_by('-published_date')
-    return render(request, "blogposts.html", {'post': posts})
+    return render(request, "blogposts.html", {'posts': posts})
 
 
 
