@@ -35,15 +35,28 @@ h1, h1 a {
     min-height: 127px;
 }
 
-.navbar.affix {
+.navbar .affix {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding: 10px 10px;
 }
+
+.navbar-default{
+    background-color: #12AB82;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #090b19b8;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #2f2f2f;
+}
+
 
 #logo {
     color: #12AB82;
