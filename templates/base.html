@@ -19,54 +19,54 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <body>
-        <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
-                <div class="container">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand" href="{% url 'get_posts' %}"><img src="/media/img/logo.png"></img></a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="{% url 'new_post' %}"></a>New Post</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="masthead">
-                    <div class="container">
-                        <div class="row">
-                            <h1>
-                                Stack
-                                <p id="logo" class="lead"> The Trial of a Bootcamp Developer
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <!-- blog post entries -->
-                                    {% block content %}
-                                    
-                                    {% endblock content %}
-                                </div>
-                            </div>
-                        </div>
+    <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'get_posts' %}"><img src="/media/img/logo.png"/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'new_post' %}"></a>New Post</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="masthead">
+        <div class="container">
+            <div class="row">
+                <h1>
+                    Stack
+                    <p id="logo" class="lead"> The Trial of a Bootcamp Developer
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel">
+                    <div class="panel-body">
+                        <!-- blog post entries -->
+                        {% block content %}
+                        {% endblock content %}
                     </div>
                 </div>
-                <footer>
-                    <div class="container">
-                        <p>Made by Code Institute bootcampers</p>
-                        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-                    </div>
-                </footer>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Tutorial Adapted by Duncan Falconer <br>& Made by Code Institute Bootcampers</p>
+            <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </div>
+    </footer>
     
 </body>
 </html>
