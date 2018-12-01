@@ -1,6 +1,6 @@
 # Django Blog Mini-Project
 
-[Here's a link!](https://ddeveloper72-django-blog.herokuapp.com/posts/)
+[Here's a link!]("https://ddeveloper72-django-blog.herokuapp.com/posts/")
 
 A simple blog app written using Django
 
