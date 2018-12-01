@@ -33,9 +33,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    os.environ.get('C9_HOSTNAME'),
-    os.environ.get('localhost', '127.0.0.1'),
     os.environ.get('HOSTNAME'),
+    os.environ.get('C9_HOSTNAME'),
+    os.environ.get('localhost', '127.0.0.1')
 ]
 
 
